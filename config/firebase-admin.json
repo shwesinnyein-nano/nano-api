@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "nano-hr-satging",
+  "private_key_id": "71bd112dd3fe718014265f8d2768a5f1e01012c4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDEpOHD8Q9Dp1vb\n8I38JRQYm5eO098B4RqADGQ3nBihEwG6fM1pCAKDZmS/pqEY3mWuKlitJPDo3rOa\nlhjUm5xikBgz5+ltgVtQMiFIcXUHaYXT42POvYf2HPQMsH1E2iHMiZQfRw6Uno8t\nSEMheZBs4JbqiGoSes+ckX+syPBpCaG0URzEohhkWqxlKnA9f/F1EEoHK407M4u6\nL8AiNLCBeiEQhYztnSbqTaNBQuRwKiyzc8v0QeCm1JQEbqhbtHkfOEtI9VT6hf+U\n35tU40icQsqqLh71p9IGkGu0dMAf9ivEqy67ocPXirpqOSpCYcuZKghOQvitzbzT\nuBk1LZQRAgMBAAECggEAXR6BRLLyGgT2JHxRGE6MqiyABCRDrhWlYW68xHK4XQpt\nnpx7/xlKa2QBIJptHiQuvV+TN4bPSE8xeOpMHt4Dm88FjwrqyK7hiWP7y9ziYNyx\nAYpkGKI68Kp8TUgEQicTq1KZIIibGHjPb0+Rbpgs8soV3UE1DcQ3bTqfXbiX0/zl\nmRtf8M1Iyztabx1VcDl9GANEOagLiPlGZUffzZYS0JQ3IOFgZT7U27TRstJAxCQM\n3Oqrl0I4r0OyQTvJzDhufFf0icLlNLaijyDHJBa4bsn4C9zEfO7jRrrTcXZ73JVF\nhdrjsAlEAo19ts0D+I33sLWnQ4GDs1BD5x5b5QLJYwKBgQDlKIKlXLPMzz6fG9uT\n+JkYA17vQ3AJmM/FuEQQfKIomuaSOjNOxuuUztFEpCsm+db5M4lF8DRBvloQeYZP\n1rbsrkhdXsWOQ6p+fOhGip680ByMgJfNg/5x3Sjo/AS0kACBuDD8AwSqWDNnO6tB\ngcbfbPGcxGSaHvYO5f20qcLYawKBgQDbrWiXogaf4b2RXAjxRCXIGMElI6PYuK8V\nLgme4ZiuZJHR4iI1DkVca1AcaTt+gOOjnEvOgOSz3l/qR2cKRk4lkSqFq/6laaMG\nqmbUQ+11U9HRHRRL3Km9sNRdmA6qFr7LwbsVYFjMZ6ReB+XuSFyXirZwQW7RaJrm\nXDYkdLoUcwKBgAu/p/MSbaVyeqNtqjRL6o1wns1lh7j2PLDGYbb2rNmoF2on0bmY\nOTvH3rLGN/Annv3nxoHvbr5wI+30TQ6K05YO2WbwFPDWR0d03/O956WGhfAuJ5pB\nyinMTOyk/xjCyUPdTaWeAf85xmjkhkM1hBywWTLQXtgH/lWFNRyuF29BAoGBANUC\npPTDi6Dkh6i3kYRBDFGmj0Kv+GRhUIQ9C98f6ajQpATcPUcs+1zOQfQKpkHYQOOY\n3njyytEOw/qsGeIAoi4TQSQ0zsseT5JbETKqW0r1Z/JZPCEDayQgnwvSMgYD4CY7\nSGlF71Tk+qCjD/Wp/P6E5rqa+BXeVLUinO1ksjq5AoGAC9kOPdze6hzkme5d223r\nWLOhD1rnNMnVMJGSICqEvFcKv3a/xTudlI+5GRm9bJcOLjeiRalgs5ItTyQaJf7+\n+UP2hLJBLBXSH1937/aNSYnIt/J3/qhjYcIixqnx3GITWXeZ3Y/0MkGBhYPY5yux\nOCqQXuM5TcXMDcj3Bt+5d2s=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-qrykr@nano-hr-satging.iam.gserviceaccount.com",
+  "client_id": "112739102458866761486",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-qrykr%40nano-hr-satging.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
