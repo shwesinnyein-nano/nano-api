@@ -13,7 +13,7 @@ app.use(cors({
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type", "Authorization"]
   }));
-app.use(cors());
+// app.use(cors());
 app.use(express.json());
 app.use(bodyParser.json());
 
