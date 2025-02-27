@@ -36,8 +36,9 @@ exports.checkEmployee = async (req, res) => {
 }
 
 exports.getEmployee = async (req, res) => {
+    console.log("📡 Fetching employees from Firestore...", );
     try {
-        console.log("📡 Fetching employees from Firestore...");
+       
 
         // Ensure Firestore is connected
         const testDoc = await db.collection("test").doc("testConnection").set({ status: "connected" });
