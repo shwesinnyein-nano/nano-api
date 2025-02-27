@@ -39,6 +39,7 @@ exports.lineLoginCallback = async (req, res) => {
       const displayName = profileResponse.data.displayName;
       const pictureUrl = profileResponse.data.pictureUrl;
   
+      console.log("userid", userId)
      // res.redirect(`http://localhost:4200/employee_profile_info?userId=${userId}&displayName=${encodeURIComponent(displayName)}&pictureUrl=${encodeURIComponent(pictureUrl)}`);
       res.json({ userId, displayName, pictureUrl }); // Send user info to frontend
     } catch (error) {
