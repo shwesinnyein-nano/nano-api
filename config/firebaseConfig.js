@@ -16,7 +16,7 @@
 
 // module.exports = { admin, db };
 
-import * as admin from "firebase-admin";
+const admin = require("firebase-admin");
 
 // Ensure the environment variable is loaded
 const serviceAccountJSON = process.env.FIREBASE_SERVICE_ACCOUNT;
