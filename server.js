@@ -17,9 +17,9 @@ app.use(cors({
 app.use(express.json());
 app.use(bodyParser.json());
 
-// db.collection("employees").add({ message: "Firestore is connected!" })
-//   .then(docRef => console.log("✅ Firestore connected. Test ID:", docRef.id))
-//   .catch(error => console.error("❌ Firestore connection error:", error));
+db.collection("employees").add({ message: "Firestore is connected!" })
+  .then(docRef => console.log("✅ Firestore connected. Test ID:", docRef.id))
+  .catch(error => console.error("❌ Firestore connection error:", error));
 
 
 app.use("/auth", authRoutes);
