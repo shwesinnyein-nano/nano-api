@@ -27,8 +27,8 @@ app.use("/employee", employeeRoutes)
 app.use("/line", lineRoutes)
 
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`✅ Server running on http://localhost:${PORT}`));
+// const PORT = process.env.PORT || 3000;
+// app.listen(PORT, () => console.log(`✅ Server running on http://localhost:${PORT}`));
 
-// module.exports = app;
+module.exports = app;
 
