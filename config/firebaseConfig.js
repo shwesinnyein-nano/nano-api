@@ -6,8 +6,8 @@ const path = require("path");
 const privateKey = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT)
 
 
-console.log("private key", privateKey)
-if (!process.env.FIREBASE_PROJECT_ID || !process.env.FIREBASE_CLIENT_EMAIL || !privateKey) {
+console.log("project_id key", privateKey.project_id)
+if ( !privateKey) {
   console.error("❌ Missing Firebase environment variables!");
   process.exit(1);
 }
