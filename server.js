@@ -8,6 +8,11 @@ const lineRoutes = require("./routes/lineRoutes")
 const {db, admin} = require("./config/firebaseConfig")
 
 const app = express();
+app.use(cors({
+    origin: "*",  
+    methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type", "Authorization"]
+  }));
 app.use(cors());
 app.use(express.json());
 app.use(bodyParser.json());
@@ -22,8 +27,8 @@ app.use("/employee", employeeRoutes)
 app.use("/line", lineRoutes)
 
 
-// const PORT = process.env.PORT || 3000;
-// app.listen(PORT, () => console.log(`✅ Server running on http://localhost:${PORT}`));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`✅ Server running on http://localhost:${PORT}`));
 
-module.exports = app;
+// module.exports = app;
 

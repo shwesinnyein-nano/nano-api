@@ -36,7 +36,7 @@ exports.checkEmployee = async (req, res) => {
 }
 
 exports.getEmployee = async (req, res) => {
-    console.log("📡 Fetching employees from Firestore...", );
+    
     try {
        
 

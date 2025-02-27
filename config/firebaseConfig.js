@@ -14,6 +14,7 @@ const path = require("path");
 // Load Firebase service account credentials dynamically
 const serviceAccount = require(path.join(__dirname, "./firebase-admin.json"));
 
+
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
  
