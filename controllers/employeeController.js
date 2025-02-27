@@ -34,3 +34,24 @@ exports.checkEmployee = async (req, res) => {
         res.status(500).json({ message: "Internal server error" });
     }
 } 
+
+exports.getEmployee = async (req, res) => {
+    try {
+      const employeesRef = db.collection("employees");
+      const snapshot = await employeesRef.get();
+  
+      if (snapshot.empty) {
+        return res.status(404).json({ message: "No employees found" });
+      }
+  
+      let employees = [];
+      snapshot.forEach((doc) => {
+        employees.push({ id: doc.id, ...doc.data() });
+      });
+  
+      res.status(200).json(employees);
+    } catch (error) {
+      console.error("Error fetching employees:", error);
+      res.status(500).json({ message: "Internal Server Error" });
+    }
+  };
