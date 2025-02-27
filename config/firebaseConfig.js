@@ -1,25 +1,37 @@
+
+
 // const admin = require("firebase-admin");
-// const serviceAccount = require("./firebase-admin.json")
+// const path = require("path");
+
+
+// const serviceAccount = require(path.join(__dirname, "./firebase-admin.json"));
+
 
 // admin.initializeApp({
-//     credential: admin.credential.cert(serviceAccount),
+//   credential: admin.credential.cert(serviceAccount),
+ 
 // });
 
 // const db = admin.firestore();
+
 // module.exports = { admin, db };
 
-const admin = require("firebase-admin");
-const path = require("path");
+import * as admin from "firebase-admin";
 
-// Load Firebase service account credentials dynamically
-const serviceAccount = require(path.join(__dirname, "./firebase-admin.json"));
+// Ensure the environment variable is loaded
+const serviceAccountJSON = process.env.FIREBASE_SERVICE_ACCOUNT;
+console.log("serviceAccountJSON", serviceAccountJSON)
 
+if (!serviceAccountJSON) {
+  throw new Error("Missing FIREBASE_SERVICE_ACCOUNT environment variable");
+}
 
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
- 
-});
+const serviceAccount = JSON.parse(serviceAccountJSON);
 
-const db = admin.firestore();
+if (!admin.apps.length) {
+  admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+  });
+}
 
-module.exports = { admin, db };
+export default admin;
