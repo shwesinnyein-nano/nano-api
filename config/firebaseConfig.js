@@ -3,7 +3,8 @@
 const admin = require("firebase-admin");
 const path = require("path");
 
-const privateKey = process.env.private_key?.replace(/\\n/g, "\n");
+const privateKey = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT)
+
 
 console.log("private key", privateKey)
 if (!process.env.FIREBASE_PROJECT_ID || !process.env.FIREBASE_CLIENT_EMAIL || !privateKey) {
